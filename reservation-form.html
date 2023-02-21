@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Reservation Form</title>
+</head>
+<body>
+    <form action="">
+        <div class="topic">
+            <h1>Travel reservation form</h1>
+            <p><b>*denotes mandotory</b></p>
+        </div>
+
+        <div class="infos">
+            <label><b>Full Name* :</b></label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter Full name" required>
+            <br><br>
+
+            <label><b>Email* :</b></label><br>
+                <input type="email" id="email" name="email" placeholder="Enter email" required>
+            <br><br>
+
+            <label><b>Select Tour Package* :</b></label><br>
+                <select name="tourpkg" id="tourpkg">
+                    <option value="goa">Goa</option>
+                    <option value="hkt">Phuket</option>
+                    <option value="cng">Chiang Mai</option>
+                </select>
+            <br><br>
+
+            <label><b>Arrival Date* :</b></label><br>
+                <input type="date" id="arrival" name="arrival" required>
+            <br><br>
+
+            <label><b>Number of Person* :</b></label><br>
+            <label>Adult</label>
+                <input type="number" id="adult" name="adult" min="0" max="10" required>
+            &nbsp;&nbsp;&nbsp;
+            <label>Child</label>
+                <input type="number" id="child" name="child" min="0" max="10" required>
+            <br><br>
+
+            <label><b>What would you want to avail?*</b></label><br>
+            <input type="checkbox" id="board" name="board">
+                <label>Boarding</label><br>
+            <input type="checkbox" id="food" name="food">
+                <label>Fooding</label><br>
+            <input type="checkbox" id="sight" name="sight">
+                <label>Sight seeing</label><br>
+            <br>
+            
+            <label><b>Discount Coupon code :</b></label><br>
+                <input type="text" id="discoupon" name="discoupon" placeholder="Code">
+            <br><br>
+
+            <label><b>Terms and Conditions*</b></label><br>
+            <input type="radio" id="agree" name="terms" value="agree">
+                <label>I agree</label>
+            &nbsp;&nbsp;&nbsp;
+            <input type="radio" id="disagree" name="terms" value="disagree">
+                <label>I disagree</label>
+            <br><br>
+
+            <input type="submit" value="Complete Reservation">
+        </div>
+    </form>
+</body>
+</html>
